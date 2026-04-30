@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Webflow exports (managed separately)
+Webflow site exports/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (for any future tooling)
+node_modules/
+npm-debug.log*
