@@ -1,0 +1,302 @@
+/* ═══════════════════════════════════════════════════════════
+   case-study.css  —  shared layout for all /work/* pages
+   Loaded alongside styles.css (global nav/footer/typography).
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── Page chrome ───────────────────────────────────────── */
+/* First section clears the fixed nav (~105 px tall) */
+.cs-overview-section {
+  margin-top: 82px;
+}
+
+/* ─── Project overview header: 3 equal columns ──────────── */
+.project-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 40px;
+  margin-top: 120px;
+  margin-bottom: 135px;
+}
+
+/* ─── Hero image ────────────────────────────────────────── */
+.section-hero {
+  margin: 82px 0 0;
+}
+
+.detail-header-image {
+  display: block;
+  width: 100%;
+}
+
+/* ─── Content wrappers ──────────────────────────────────── */
+/* Matches Webflow's .container-3 (gray band inner) */
+.container-3 {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+/* Matches Webflow's .container-4 (white band inner) */
+.container-4 {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-bottom: 60px;
+}
+
+/* ─── Alternating section bands ─────────────────────────── */
+.section-gray {
+  background: #f8f8f8;
+  padding-bottom: 60px;
+}
+
+.section-mod {
+  margin: 0 0 40px;
+}
+
+/* ─── Label + content two-column layout ─────────────────── */
+/* Used for Background, Design Explorations, Reflections     */
+.label-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* ─── Section titles & labels ───────────────────────────── */
+.work-section-title {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 39px;
+  margin: 0;
+}
+
+.position-name-text {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 34px;
+  margin: 20px 0 0;
+}
+
+.position-name-text:first-child {
+  margin-top: 0;
+}
+
+.subsection-heading-full-width {
+  text-align: left;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 20px 0 10px;
+}
+
+.caption {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+  opacity: 0.6;
+  margin: 8px 0;
+}
+
+.role-description {
+  opacity: 0.6;
+  text-align: left;
+  font-style: italic;
+  font-weight: 200;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+/* ─── Client bar (name + logo inline) ───────────────────── */
+.client-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.client-logo {
+  max-height: 2rem;
+  width: auto;
+  display: block;
+}
+
+/* ─── Lists ─────────────────────────────────────────────── */
+.list-3,
+.numbered-list {
+  color: #1a1b1f;
+  margin: 12px 0 16px;
+  padding-left: 1.4em;
+  font-weight: 400;
+}
+
+.list-3 li,
+.numbered-list li {
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+/* ─── Requirements callout box ──────────────────────────── */
+.requirements-box {
+  background: #f8f8f8;
+  margin-top: 40px;
+  padding: 10px 0 35px;
+}
+
+.req-item-label {
+  padding: 25px 40px 0;
+  margin: 0;
+}
+
+.req-item-desc {
+  padding: 6px 40px 0;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+  opacity: 0.7;
+}
+
+/* ─── Utility spacing ───────────────────────────────────── */
+.content-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mt-12 { margin-top: 12px; }
+.mt-16 { margin-top: 16px; }
+
+/* ─── Full-width case study image ───────────────────────── */
+.case-img {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.case-img-centered {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+/* ─── Results: intro text + image side by side ──────────── */
+.results-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 48px;
+  align-items: start;
+  margin: 30px 0;
+}
+
+/* ─── Design exploration block ──────────────────────────── */
+.exploration-block {
+  margin-bottom: 50px;
+}
+
+/* ─── GIF demo grid (gif | description, repeated) ──────── */
+.gif-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  column-gap: 40px;
+  row-gap: 71px;
+  align-items: start;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.gif-grid img {
+  display: block;
+  max-height: 40rem;
+  width: auto;
+  max-width: 100%;
+}
+
+.gif-desc {
+  padding-top: 16px;
+}
+
+/* ─── Flow images: 3 equal columns ─────────────────────── */
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  margin-bottom: 12px;
+}
+
+.flow-grid img {
+  display: block;
+  width: 100%;
+}
+
+/* ═══ Responsive ═══════════════════════════════════════════ */
+
+/* Tablet (≤991px) */
+@media screen and (max-width: 991px) {
+  .project-overview {
+    grid-template-columns: 1fr;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 50px;
+    margin-top: 90px;
+    margin-bottom: 95px;
+  }
+
+  .label-content-grid {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+
+  .results-intro-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile (≤767px) */
+@media screen and (max-width: 767px) {
+  .section-hero,
+  .section-mod {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .project-overview {
+    width: 80%;
+    max-width: 470px;
+  }
+
+  .work-section-title {
+    margin-right: 15px;
+  }
+
+  .gif-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .flow-grid {
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+  }
+}
+
+/* Small mobile (≤479px) */
+@media screen and (max-width: 479px) {
+  .project-overview {
+    width: 100%;
+    max-width: none;
+  }
+
+  .detail-header-image {
+    margin-left: auto;
+  }
+}
