@@ -9,14 +9,21 @@
   margin-top: 82px;
 }
 
-/* ─── Project overview header: 3 equal columns ──────────── */
+/* ─── Project overview header ───────────────────────────── */
+/* Row 1: title (full width)                                 */
+/* Row 2: problem/solution (2fr) | role (1fr)               */
 .project-overview {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr;
   column-gap: 50px;
   row-gap: 40px;
   margin-top: 120px;
   margin-bottom: 135px;
+}
+
+/* Title + client bar spans both columns */
+.project-overview > div:first-child {
+  grid-column: 1 / -1;
 }
 
 /* ─── Hero image ────────────────────────────────────────── */
