@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DNA Annotations Redesign | Iris Fung</title>
+  <meta name="description" content="Redesigning Benchling's DNA annotations view so biologists can view, edit, and manage sequence metadata at scale.">
+  <meta property="og:title" content="DNA Annotations Redesign — Iris Fung">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62a3d27bf525567cd4f887b6_Flavicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/629bb634c8442b1de7d14830_Webclip.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../case-study.css">
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo-link" aria-label="home">
+        <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628002057ec57943fa3e2681_irisfung%20avatar.jpg" width="45" alt="Iris Fung" class="logo-image">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/627ffb1a25b65e2dfaf79940_menu-icon.png" width="22" alt="">
+      </button>
+      <div class="nav-links">
+        <a href="/" class="nav-item current">design</a>
+        <a href="/work/art/" class="nav-item">Art</a>
+        <a href="/about/" class="nav-item">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── ① Project overview ─────────────────────────────── -->
+  <div class="section cs-overview-section">
+    <div class="container">
+      <div class="project-overview">
+
+        <div>
+          <h1 class="heading-jumbo">DNA Annotations Redesign</h1>
+          <div class="client-bar">
+            <span>for Benchling</span>
+            <a href="https://www.benchling.com" target="_blank">
+              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62a11b0565bd4c100833e98f_Benchling-Logo-Symbol%26Wordmark-BioBlue.png"
+                   loading="lazy"
+                   alt="Benchling logo"
+                   class="client-logo">
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="position-name-text">PROBLEM</p>
+          <p class="paragraph-light">Biologists annotate strings of DNA sequences to demarcate what and where different genes are involved in their experiments. Benchling provides software that allows users to digitally capture annotations, but the captured annotations were difficult to manipulate, edit, and lacked visual continuity with other parts of the product.</p>
+          <p class="position-name-text">SOLUTION</p>
+          <p class="paragraph-light">Redesigned full screen view allows users to view, edit, and manage their DNA sequence annotations.</p>
+        </div>
+
+        <div>
+          <p class="position-name-text">ROLE</p>
+          <p class="paragraph-light">UX Designer, Spring 2022</p>
+          <p class="role-description">Worked directly with the project manager and engineering team to define, develop, and deliver a decision based on existing problem discovery.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ② Hero image ───────────────────────────────────── -->
+  <div class="section-hero">
+    <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6298004122c7fa83052d34c0_selection%20forward.gif"
+         alt="A full-screen demo of a user adding notes to the annotations view"
+         class="detail-header-image">
+  </div>
+
+  <!-- ── ③ Background (gray band) ──────────────────────── -->
+  <div class="section-mod">
+    <div class="section-gray">
+      <div class="container-3">
+        <div class="label-content-grid">
+
+          <div>
+            <p class="work-section-title">Background</p>
+          </div>
+
+          <div>
+            <p class="paragraph-light">Scientists work with strings of DNA made up of individual letters, or bases, that "spell out" the instructions telling a cell what to do. A sequence typically looks like this:</p>
+
+            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6282bc78cde24042d246d228_Screen%20Shot%202022-05-16%20at%202.04.34%20PM.png"
+                 loading="lazy"
+                 srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6282bc78cde24042d246d228_Screen%20Shot%202022-05-16%20at%202.04.34%20PM-p-500.png 500w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6282bc78cde24042d246d228_Screen%20Shot%202022-05-16%20at%202.04.34%20PM.png 887w"
+                 sizes="(max-width: 767px) 93vw, 700px"
+                 alt="A nonsense string of DNA bases"
+                 class="case-img-centered">
+
+            <p class="paragraph-light mt-16">…and it goes on for hundreds or thousands of bases. While cells can comprehend these instructions, humans need additional notes to understand which sequence sections contain information for which genes, and what each gene does. Scientists use <strong>annotations</strong> to store that information, and are constantly updating them with new metadata gathered through experiments and literature review.</p>
+            <p class="paragraph-light mt-12">It's similar to an electrical wiring diagram for a house — it's difficult to walk in and know exactly how to install a cooktop without the diagram. <strong>In the same way, it's important for scientists to have annotations — their wiring diagram — accessible to plan experiments and understand unexpected outcomes.</strong></p>
+
+            <h2 class="subsection-heading-full-width">Design goals</h2>
+            <ul class="list-3">
+              <li class="paragraph-light">Continuous visibility of system status, especially when users are in a "split screen" view</li>
+              <li class="paragraph-light">Reduced reliance on recall when browsing or manipulating annotations</li>
+              <li class="paragraph-light">Increased accessibility of information, especially when considering extraction of stored annotations data</li>
+              <li class="paragraph-light">Aesthetic and intuitive design using the latest design system</li>
+            </ul>
+
+            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286b552d00ce13364892c70_Screen%20Shot%202022-05-19%20at%202.21.17%20PM.png"
+                 loading="lazy"
+                 srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286b552d00ce13364892c70_Screen%20Shot%202022-05-19%20at%202.21.17%20PM-p-500.png 500w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286b552d00ce13364892c70_Screen%20Shot%202022-05-19%20at%202.21.17%20PM-p-800.png 800w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286b552d00ce13364892c70_Screen%20Shot%202022-05-19%20at%202.21.17%20PM-p-1080.png 1080w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286b552d00ce13364892c70_Screen%20Shot%202022-05-19%20at%202.21.17%20PM-p-1600.png 1600w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286b552d00ce13364892c70_Screen%20Shot%202022-05-19%20at%202.21.17%20PM-p-2000.png 2000w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286b552d00ce13364892c70_Screen%20Shot%202022-05-19%20at%202.21.17%20PM-p-2600.png 2600w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286b552d00ce13364892c70_Screen%20Shot%202022-05-19%20at%202.21.17%20PM.png 2690w"
+                 sizes="(max-width: 767px) 93vw, (max-width: 991px) 728px, 940px"
+                 alt="Screenshot of the Benchling product highlighting checkboxes, the name column, and the notes column"
+                 class="case-img zoomable">
+            <p class="caption">Annotated areas of interest in the Benchling annotations view: 1) checkboxes for bulk selection, 2) annotation name column, 3) notes column.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ④ Problem: Reimagining annotations as a database (white) ── -->
+  <div class="container-4">
+
+    <div class="content-block">
+      <p class="work-section-title">Reimagining Annotations as a Database</p>
+    </div>
+
+    <p class="paragraph-light">While there were several factors driving this redesign, the primary reason was that users experienced frustration when adding and extracting metadata from annotations. Scientists often used annotations with the assumption that a "standard" set of information would be available and manipulatable. The existing presentation of the "standard" information in Benchling was in an unstructured Notes field, <strong>forcing users to recall what information is available, preventing field-specific filtering, and causing exported data to be difficult to integrate with common industry platforms.</strong></p>
+
+    <div class="results-intro-grid" style="margin-top: 32px;">
+      <div>
+        <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286e4f78accd134b1795ac0_Ensmbl%20Brca2%20.png"
+             loading="lazy"
+             srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286e4f78accd134b1795ac0_Ensmbl%20Brca2%20-p-500.png 500w,
+                     https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286e4f78accd134b1795ac0_Ensmbl%20Brca2%20-p-800.png 800w,
+                     https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286e4f78accd134b1795ac0_Ensmbl%20Brca2%20-p-1080.png 1080w,
+                     https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286e4f78accd134b1795ac0_Ensmbl%20Brca2%20-p-1600.png 1600w,
+                     https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286e4f78accd134b1795ac0_Ensmbl%20Brca2%20.png 1702w"
+             sizes="(max-width: 767px) 93vw, (max-width: 991px) 350px, 460px"
+             alt="Screenshot of structured metadata fields on ENSMBL"
+             class="case-img zoomable">
+        <p class="caption">Metadata fields on ENSMBL, widely considered the provider for a "standard" set of annotation metadata.</p>
+      </div>
+      <div>
+        <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62880684e461d3ad5778b24c_Benchling%20Brca2.png"
+             loading="lazy"
+             srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62880684e461d3ad5778b24c_Benchling%20Brca2-p-500.png 500w,
+                     https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62880684e461d3ad5778b24c_Benchling%20Brca2.png 704w"
+             sizes="(max-width: 767px) 93vw, (max-width: 991px) 350px, 460px"
+             alt="Screenshot of a single annotation and its metadata on Benchling"
+             class="case-img zoomable">
+        <p class="caption">A single annotation and its associated metadata on Benchling — all stored in an unstructured Notes field.</p>
+      </div>
+    </div>
+
+    <p class="paragraph-light mt-16">While there were a number of ways to tackle lossy metadata organization for annotations, <strong>reimagining the collection of annotations as a database, with customizable fields made of key-value pairs, was the method that maximized user control over input, manipulation, and extraction of metadata.</strong> Annotations-as-a-database laid the groundwork for how I thought about functionality and presentation of annotations throughout the redesign.</p>
+
+  </div>
+
+  <!-- ── ⑤ Design Exploration (gray band) ──────────────── -->
+  <div class="section">
+    <div class="section-gray">
+      <div class="container-3">
+        <div class="label-content-grid">
+
+          <div>
+            <p class="work-section-title">Design Exploration</p>
+          </div>
+
+          <div>
+
+            <!-- Exploration 1: Bulk actions -->
+            <div class="exploration-block">
+              <h2 class="subsection-heading-full-width">Enabling bulk actions</h2>
+              <p class="paragraph-light">Once we decided to treat annotations as a database, I considered different ways to surface annotations and associated metadata to users. Users could already see annotations labeled directly on the DNA sequence. They had to open the expanded annotations panel to see the metadata attached to an annotation.</p>
+
+              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628da3c377035a0790c83031_Annotaitons%20highlighted%202.png"
+                   loading="lazy"
+                   srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628da3c377035a0790c83031_Annotaitons%20highlighted%202-p-500.png 500w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628da3c377035a0790c83031_Annotaitons%20highlighted%202-p-800.png 800w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628da3c377035a0790c83031_Annotaitons%20highlighted%202-p-1080.png 1080w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628da3c377035a0790c83031_Annotaitons%20highlighted%202.png 1561w"
+                   sizes="(max-width: 767px) 93vw, (max-width: 991px) 728px, 940px"
+                   alt="Screenshot of the Benchling split workspace with annotation labels on the left and the expanded annotations view on the right"
+                   class="case-img zoomable">
+              <p class="caption">Annotation labels on the DNA sequence (left side of split workspace) paired with the expanded annotations view with Notes field (right side).</p>
+
+              <p class="paragraph-light mt-16">Some options, such as using cards for each annotation, were initially attractive because they were more visually clean. However, based on stakeholder interviews, <strong>I discovered that the top two reasons users arrived at the annotations view was 1) to make bulk edits to several annotations at once, and 2) to compare metadata between two or more annotations.</strong></p>
+              <p class="paragraph-light mt-12">Recognizing that bulk actions were the workhorse of this view, I decided to use a toolbar as a space for users to initiate bulk actions. This brought bulk functionality to the forefront of the view and made many hidden functions much more discoverable.</p>
+
+              <div class="before-after-grid">
+                <div class="before-after-item">
+                  <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628dcd2da704350ac2d2cdcb_before%20bulk%20actions.png"
+                       loading="lazy"
+                       srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628dcd2da704350ac2d2cdcb_before%20bulk%20actions-p-500.png 500w,
+                               https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628dcd2da704350ac2d2cdcb_before%20bulk%20actions-p-800.png 800w,
+                               https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628dcd2da704350ac2d2cdcb_before%20bulk%20actions-p-1080.png 1080w,
+                               https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628dcd2da704350ac2d2cdcb_before%20bulk%20actions.png 1280w"
+                       sizes="(max-width: 767px) 93vw, 420px"
+                       alt="Before: bulk filtering, visibility, creation, and edit controls scattered across four different areas of the screen"
+                       class="zoomable" style="display:block;width:100%;">
+                  <p class="caption">Before: 1) Bulk filtering, 2) bulk visibility, 3) annotation creation, and 4) bulk edit scattered across four different areas.</p>
+                </div>
+                <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628dcf71a8ef952924977306_ltor.png"
+                     alt="Arrow pointing left to right"
+                     class="before-after-arrow" loading="lazy">
+                <div class="before-after-item">
+                  <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628dcc73a8ef950a9097573c_After%20after%20bulk%20actions.svg"
+                       loading="lazy"
+                       alt="After: bulk filtering, visibility, and creation condensed into a single toolbar area"
+                       class="zoomable" style="display:block;width:100%;">
+                  <p class="caption">After: 1) Bulk filtering, 2) bulk visibility, and 3) annotation creation condensed into a single toolbar. 4) Bulk edit visually communicated with text highlighting.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Exploration 2: Custom fields -->
+            <div class="exploration-block">
+              <h2 class="subsection-heading-full-width">Creating new custom fields and annotations</h2>
+              <p class="paragraph-light">Creating custom fields was a new functionality not previously available for annotations. My hypothesis was that creating a flow with high familiarity would be easiest for users to discover and learn — so I considered borrowing from existing patterns seen in many table-based softwares and using a new column that could be edited in place.</p>
+
+              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62901bf94dd180454dcee40f_add%20v1.png"
+                   loading="lazy"
+                   srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62901bf94dd180454dcee40f_add%20v1-p-500.png 500w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62901bf94dd180454dcee40f_add%20v1-p-800.png 800w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62901bf94dd180454dcee40f_add%20v1-p-1080.png 1080w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62901bf94dd180454dcee40f_add%20v1.png 1199w"
+                   sizes="(max-width: 767px) 93vw, (max-width: 991px) 728px, 940px"
+                   alt="Two screens showing a flow for adding custom fields that allows users to edit in place"
+                   class="case-img zoomable">
+              <p class="caption">A two-step flow for adding custom fields that allows users to edit in place. While a common pattern, additional research uncovered use cases this pattern could not support. On to more iteration!</p>
+
+              <p class="paragraph-light mt-16">However, there were several scenarios where a user might want to add metadata to an annotation but not necessarily have all the information available to fill out an edit-in-place column. Feedback from user research surfaced recurring pain points:</p>
+
+              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6291977cdbb62812cfd904c0_Speaking%20Wrong%20people.png"
+                   loading="lazy"
+                   srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6291977cdbb62812cfd904c0_Speaking%20Wrong%20people-p-500.png 500w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6291977cdbb62812cfd904c0_Speaking%20Wrong%20people-p-800.png 800w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6291977cdbb62812cfd904c0_Speaking%20Wrong%20people.png 1199w"
+                   sizes="(max-width: 767px) 93vw, (max-width: 991px) 728px, 940px"
+                   alt="Three user persona quote cards highlighting pain points with column management"
+                   class="case-img zoomable">
+
+              <p class="paragraph-light mt-12">The trade-off of data quality for ease of custom field creation was not favorable, especially when a key use of capturing this metadata is clean data exports for downstream use in the R&amp;D workflow. <strong>I iterated through a few other possibilities and eventually landed on one with an automated search for existing columns with the same column name.</strong> This safeguarded against data quality loss and removed reliance on recall.</p>
+
+              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62941218345465430dcf15b0_add%20new%20column%20options.png"
+                   loading="lazy"
+                   srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62941218345465430dcf15b0_add%20new%20column%20options-p-500.png 500w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62941218345465430dcf15b0_add%20new%20column%20options-p-800.png 800w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62941218345465430dcf15b0_add%20new%20column%20options-p-1080.png 1080w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62941218345465430dcf15b0_add%20new%20column%20options-p-1600.png 1600w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62941218345465430dcf15b0_add%20new%20column%20options-p-2000.png 2000w,
+                           https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62941218345465430dcf15b0_add%20new%20column%20options.png 2062w"
+                   sizes="(max-width: 767px) 93vw, (max-width: 991px) 728px, 940px"
+                   alt="Three iteration screens showing ideas for how to add new custom field columns"
+                   class="case-img zoomable">
+              <p class="caption">Three iterations for adding custom fields: a modal with a dropdown, a modal with autofill search, and a toolbar dropdown with autofill search and the option to add a new field.</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ⑥ Reflections (white) ─────────────────────────── -->
+  <div class="section">
+    <div class="container-4">
+      <div class="label-content-grid">
+
+        <div>
+          <p class="work-section-title">Reflections</p>
+        </div>
+
+        <div>
+          <p class="paragraph-light">One of the biggest challenges of this project was that it occurred on a very short timeline. This required making some trade-offs — for example, working with existing discovery material and iterating with project managers rather than customers directly. This project sits in the "Define" and "Deliver" stages of the design process.</p>
+          <p class="paragraph-light mt-12">While I'm confident that the design decisions I made address the needs and constraints presented to me, <strong>I'm aware that they all come from a place that's a step abstracted from the user and require more testing to deliver on a final solution.</strong></p>
+          <p class="paragraph-light mt-12">Ultimately, I appreciate that my work is just one step in what is a much longer process.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer-wrap">
+    <div class="footer-links">
+      <a href="/" class="footer-item">Back to Projects</a>
+      <a href="https://www.linkedin.com/in/irisfung/" target="_blank" class="footer-item">LinkedIn</a>
+      <a href="https://www.instagram.com/pewris/" target="_blank" class="footer-item">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="../../scripts.js" defer></script>
+</body>
+</html>

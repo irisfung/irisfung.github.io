@@ -1,5 +1,32 @@
 /* Shared nav behaviour — loaded on every page with defer */
 document.addEventListener('DOMContentLoaded', function () {
+
+  /* ── Image lightbox (.zoomable) ──────────────────────── */
+  var zoomables = document.querySelectorAll('.zoomable');
+  if (zoomables.length) {
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.innerHTML = '<img class="lightbox-img" alt="">';
+    document.body.appendChild(overlay);
+    var lbImg = overlay.querySelector('.lightbox-img');
+
+    zoomables.forEach(function (img) {
+      img.addEventListener('click', function () {
+        lbImg.src = img.currentSrc || img.src;
+        lbImg.alt = img.alt;
+        overlay.classList.add('open');
+      });
+    });
+
+    overlay.addEventListener('click', function () {
+      overlay.classList.remove('open');
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') overlay.classList.remove('open');
+    });
+  }
+
   const nav    = document.querySelector('.nav');
   const toggle = document.querySelector('.menu-toggle');
   const links  = document.querySelector('.nav-links');
