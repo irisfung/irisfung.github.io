@@ -158,7 +158,6 @@
             <!-- Table comparison exploration -->
             <div class="exploration-block">
               <h2 class="subsection-heading-full-width">Table Comparison</h2>
-              <p class="caption">The existing 2-product comparison view, and my spreadsheet for comparing multiple products at a time.</p>
               <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/67a4fc37c6abdcf5644cd6bc_4dd6904bc8e799a81d97b98529342c52_table%20comparison.png"
                    loading="lazy"
                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 63vw, (max-width: 991px) 80vw, 100vw"
@@ -168,6 +167,7 @@
                            https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/67a4fc37c6abdcf5644cd6bc_4dd6904bc8e799a81d97b98529342c52_table%20comparison.png 1319w"
                    alt="Comparison of existing 2-product table view and a multi-product spreadsheet"
                    class="case-img">
+              <p class="caption">The existing 2-product comparison view, and my spreadsheet for comparing multiple products at a time.</p>
               <p class="paragraph-light">The most commonly used tool for comparison is a table. The grid structure makes scanning across multiple products very easy, and people are very familiar with how to digest information in a table. However, tables are a challenge on mobile:</p>
               <ol class="numbered-list">
                 <li class="paragraph-light"><strong>Limited Screen Space</strong>: Mobile screens are small, making it difficult to fit multiple columns without forcing users to zoom, scroll excessively, or lose context.</li>
@@ -181,7 +181,7 @@
             <!-- Data visualization exploration -->
             <div class="exploration-block">
               <h2 class="subsection-heading-full-width">Ingredient Relation Visualization</h2>
-              <p class="caption">Left: Venn diagrams become hard to parse after &gt;4 items. Right: An UpSet data visualization is more effective at showing what is contained in each existing combination.</p>
+              <p class="paragraph-light">I considered using a visualization to reduce cognitive load and orient the user on the overlaps between different products.</p>
               <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/67a517893df38b728094fc09_data%20vis.png"
                    loading="lazy"
                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 63vw, (max-width: 991px) 80vw, 100vw"
@@ -191,7 +191,7 @@
                            https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/67a517893df38b728094fc09_data%20vis.png 1319w"
                    alt="Venn diagram and UpSet plot data visualizations"
                    class="case-img">
-              <p class="paragraph-light">I considered using a visualization to reduce cognitive load and orient the user on the overlaps between different products.</p>
+              <p class="caption">Left: Venn diagrams become hard to parse after &gt;4 items. Right: An UpSet data visualization is more effective at showing what is contained in each existing combination.</p>
               <p class="paragraph-light mt-12">Initially, I thought this could be an effective way to give the user control in selecting exactly which overlap or exclusion they were interested in (e.g. "Show me which ingredients are unique in the product that triggered a reaction" or "Show me what's shared across all products I use").</p>
               <p class="paragraph-light mt-12">However, I realized for the core problem of identifying safe skincare products, users typically don't care about partial overlaps (e.g., ingredients appearing in some but not all products). Instead, they focus on what's uniquely different or universally shared. That meant presenting a visualization creates more challenges than solutions:</p>
               <ol class="numbered-list">
