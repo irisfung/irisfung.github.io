@@ -77,11 +77,10 @@
          class="detail-header-image">
   </div>
 
-  <!-- ── ③ Background (gray band) ──────────────────────── -->
-  <div class="section-mod">
-    <div class="section-gray">
-      <div class="container-3">
-        <div class="label-content-grid">
+  <!-- ── ③ Background ──────────────────────────────────── -->
+  <div class="section">
+    <div class="container-4">
+      <div class="label-content-grid">
 
           <div>
             <p class="work-section-title">Background</p>
@@ -98,16 +97,16 @@
                  alt="A nonsense string of DNA bases"
                  class="case-img-centered">
 
-            <p class="paragraph-light mt-16">…and it goes on for hundreds or thousands of bases. While cells can comprehend these instructions, humans need additional notes to understand which sequence sections contain information for which genes, and what each gene does. Scientists use <strong>annotations</strong> to store that information, and are constantly updating them with new metadata gathered through experiments and literature review.</p>
-            <p class="paragraph-light mt-12">It's similar to an electrical wiring diagram for a house — it's difficult to walk in and know exactly how to install a cooktop without the diagram. <strong>In the same way, it's important for scientists to have annotations — their wiring diagram — accessible to plan experiments and understand unexpected outcomes.</strong></p>
+            <p class="paragraph-light mt-16">…and it goes on for hundreds or thousands of bases. While cells can comprehend these instructions, humans need additional notes to understand which sequence sections contain information for which genes, and what each gene does. Scientists use annotations to store that information, and are constantly updating them with new metadata gathered through experiments and literature review.</p>
+            <p class="paragraph-light mt-12">It's similar to an electrical wiring diagram for a house — it's difficult to walk in and know exactly how to install a cooktop without the diagram. In the same way, it's important for scientists to have annotations — their wiring diagram — accessible to plan experiments and understand unexpected outcomes.</p>
 
-            <h2 class="subsection-heading-full-width">Design goals</h2>
-            <ul class="list-3">
+            <p class="paragraph-light mt-16">I came onto this project after the discovery phase had already been completed. These were the following areas I focused on for this redesign.</p>
+            <ol class="numbered-list">
               <li class="paragraph-light">Continuous visibility of system status, especially when users are in a "split screen" view</li>
               <li class="paragraph-light">Reduced reliance on recall when browsing or manipulating annotations</li>
               <li class="paragraph-light">Increased accessibility of information, especially when considering extraction of stored annotations data</li>
               <li class="paragraph-light">Aesthetic and intuitive design using the latest design system</li>
-            </ul>
+            </ol>
 
             <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286b552d00ce13364892c70_Screen%20Shot%202022-05-19%20at%202.21.17%20PM.png"
                  loading="lazy"
@@ -123,22 +122,24 @@
                  class="case-img zoomable">
             <p class="caption">Annotated areas of interest in the Benchling annotations view: 1) checkboxes for bulk selection, 2) annotation name column, 3) notes column.</p>
           </div>
-
-        </div>
       </div>
     </div>
   </div>
 
-  <!-- ── ④ Problem: Reimagining annotations as a database (white) ── -->
-  <div class="container-4">
+  <!-- ── ④ Problem: Reimagining annotations as a database (gray) ── -->
+  <div class="section-mod">
+    <div class="section-gray">
+      <div class="container-3">
+        <div class="label-content-grid">
 
-    <div class="content-block">
-      <p class="work-section-title">Reimagining Annotations as a Database</p>
-    </div>
+          <div>
+            <p class="work-section-title">Reimagining Annotations as a Database</p>
+          </div>
 
-    <p class="paragraph-light">While there were several factors driving this redesign, the primary reason was that users experienced frustration when adding and extracting metadata from annotations. Scientists often used annotations with the assumption that a "standard" set of information would be available and manipulatable. The existing presentation of the "standard" information in Benchling was in an unstructured Notes field, <strong>forcing users to recall what information is available, preventing field-specific filtering, and causing exported data to be difficult to integrate with common industry platforms.</strong></p>
+          <div>
+                    <p class="paragraph-light">While there were several factors driving this redesign, the primary reason was that users experienced frustration when adding and extracting metadata from annotations. Scientists often used annotations with the assumption that a "standard" set of information would be available and manipulatable. The existing presentation of the "standard" information in Benchling was in an unstructured Notes field, <strong>forcing users to recall what information is available, preventing field-specific filtering, and causing exported data to be difficult to integrate with common industry platforms.</strong></p>
 
-    <div class="results-intro-grid" style="margin-top: 32px;">
+            <div class="results-intro-grid" style="margin-top: 32px;">
       <div>
         <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6286e4f78accd134b1795ac0_Ensmbl%20Brca2%20.png"
              loading="lazy"
@@ -164,15 +165,19 @@
       </div>
     </div>
 
-    <p class="paragraph-light mt-16">While there were a number of ways to tackle lossy metadata organization for annotations, <strong>reimagining the collection of annotations as a database, with customizable fields made of key-value pairs, was the method that maximized user control over input, manipulation, and extraction of metadata.</strong> Annotations-as-a-database laid the groundwork for how I thought about functionality and presentation of annotations throughout the redesign.</p>
+            <p class="paragraph-light mt-16">While there were a number of ways to tackle lossy metadata organization for annotations, <strong>reimagining the collection of annotations as a database, with customizable fields made of key-value pairs, was the method that maximized user control over input, manipulation, and extraction of metadata.</strong> Annotations-as-a-database laid the groundwork for how I thought about functionality and presentation of annotations throughout the redesign.</p>
 
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- ── ⑤ Design Exploration (gray band) ──────────────── -->
+  <!-- ── ⑤ Design Exploration ──────────────────────────── -->
   <div class="section">
-    <div class="section-gray">
-      <div class="container-3">
-        <div class="label-content-grid">
+    <div class="container-4">
+      <div class="label-content-grid">
 
           <div>
             <p class="work-section-title">Design Exploration</p>
@@ -273,7 +278,6 @@
         </div>
       </div>
     </div>
-  </div>
 
   <!-- ── ⑥ Reflections (white) ─────────────────────────── -->
   <div class="section">
