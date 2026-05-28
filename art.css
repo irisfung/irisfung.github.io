@@ -5,7 +5,7 @@
 
 /* ─── Page chrome ───────────────────────────────────────── */
 .art-page {
-  padding-top: 110px;
+  padding-top: 160px;
   padding-bottom: 80px;
 }
 
@@ -44,7 +44,7 @@
 .tab-btn:hover  { opacity: 0.75; }
 .tab-btn.active {
   opacity: 1;
-  color: #fe0005;
+  color: #333;
 }
 .tab-btn.active span {
   border-bottom-color: #fe0005;
