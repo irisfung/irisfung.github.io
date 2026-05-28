@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Error Messaging | Iris Fung</title>
+  <meta name="description" content="Designing clear, accessible status messaging for Benchling's DNA parts — distinguishing error states from status states.">
+  <meta property="og:title" content="Error Messaging — Iris Fung">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62a3d27bf525567cd4f887b6_Flavicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/629bb634c8442b1de7d14830_Webclip.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../case-study.css">
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo-link" aria-label="home">
+        <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628002057ec57943fa3e2681_irisfung%20avatar.jpg" width="45" alt="Iris Fung" class="logo-image">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/627ffb1a25b65e2dfaf79940_menu-icon.png" width="22" alt="">
+      </button>
+      <div class="nav-links">
+        <a href="/" class="nav-item current">design</a>
+        <a href="/work/art/" class="nav-item">Art</a>
+        <a href="/about/" class="nav-item">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── ① Project overview ─────────────────────────────── -->
+  <div class="section cs-overview-section">
+    <div class="container">
+      <div class="project-overview">
+
+        <div>
+          <h1 class="heading-jumbo">Error Messaging</h1>
+          <div class="client-bar">
+            <span>at Benchling</span>
+            <a href="https://www.benchling.com" target="_blank">
+              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62a11b0565bd4c100833e98f_Benchling-Logo-Symbol%26Wordmark-BioBlue.png"
+                   loading="lazy"
+                   alt="Benchling logo"
+                   class="client-logo">
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="position-name-text">PROBLEM</p>
+          <p class="paragraph-light">Benchling provides software for scientists to import and manipulate strings of DNA sequences. An updated version of the DNA editor introduced more functionality for sections of the sequence users designated as "parts", but removed the ability to edit parts. We needed to communicate to users that for parts, editing is not allowed.</p>
+          <p class="position-name-text">SOLUTION</p>
+          <p class="paragraph-light">Created appropriate messaging for users to understand the connection between changes in sequence status and ability to edit.</p>
+        </div>
+
+        <div>
+          <p class="position-name-text">ROLE</p>
+          <p class="paragraph-light">UX Designer, Spring 2022</p>
+          <p class="role-description">Worked directly with the project manager and engineering team to define, develop, and deliver a decision based on existing problem discovery.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ② Hero ─────────────────────────────────────────── -->
+  <div class="section-hero">
+    <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd12aa0820274370d5dc8e_final.gif"
+         alt="The DNA sequence editor showing a blinking cursor, then a non-blinking cursor when clicked into a part, then a tooltip appearing when the user tries to type"
+         class="detail-header-image">
+  </div>
+
+  <!-- ── ③ Background (gray) ───────────────────────────── -->
+  <div class="section-mod">
+    <div class="section-gray">
+      <div class="container-3">
+        <div class="label-content-grid">
+
+          <div>
+            <p class="work-section-title">Background</p>
+          </div>
+
+          <div>
+            <p class="paragraph-light">"Parts" are a special class of entities in Benchling that help scientists give meaning to their DNA sequence. They are quite useful when working with an otherwise meaningless string of As, Ts, Cs, and Gs. Users turn to parts for the following reasons:</p>
+            <ul class="list-3">
+              <li class="paragraph-light">Parts help users break down the makeup of large sequences into smaller, more meaningful chunks — sort of like section headers and a table of contents.</li>
+              <li class="paragraph-light">Parts help users get additional information about a section, like a footnote. Users will see the same footnote no matter which DNA sequence contains the part.</li>
+            </ul>
+            <p class="paragraph-light">Groups working on target sequences together like to use parts to <strong>keep information in sync and preserve data integrity across the team</strong>. If you've ever used components in Figma, you can think of parts in Benchling as similar — both make sure the atoms that make up a larger item stay the same across the project for cohesion.</p>
+
+            <h2 class="subsection-heading-full-width">A common flow with parts</h2>
+
+            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be1b2e9afe0211032e6bcd_using%20autofill%20parts.png"
+                 loading="lazy"
+                 srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be1b2e9afe0211032e6bcd_using%20autofill%20parts-p-500.png 500w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be1b2e9afe0211032e6bcd_using%20autofill%20parts-p-800.png 800w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be1b2e9afe0211032e6bcd_using%20autofill%20parts.png 1274w"
+                 sizes="(max-width: 767px) 93vw, (max-width: 991px) 728px, 940px"
+                 alt="Flow chart showing importing a new sequence, identifying a part from the parts registry, and the imported sequence newly labeled as a part"
+                 class="case-img zoomable">
+
+            <p class="paragraph-light mt-16">First, a scientist imports a sequence of DNA they want to work with. Then, the scientist uses "Autofill Parts" to let Benchling automatically identify sections of the imported sequence that match sequences in the parts registry. Finally, the identified part is labeled and linked to all other instances of that part. The scientist can choose to unlink the part if they wish to change that section of the DNA.</p>
+            <p class="paragraph-light mt-12">A key product update removed the ability to make changes to parts in the DNA editor, and we needed to create messaging to communicate this to the user. By iterating with stakeholders, I was able to craft messaging that met my design goals of both continuous communication and maximized user control.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ④ Design Exploration (white) ──────────────────── -->
+  <div class="section">
+    <div class="container-4">
+      <div class="label-content-grid">
+
+        <div>
+          <p class="work-section-title">Design Exploration</p>
+        </div>
+
+        <div>
+
+          <!-- Exploration 1: Reframing the problem -->
+          <div class="exploration-block">
+            <h2 class="subsection-heading-full-width">Disentangling error messaging from status messaging</h2>
+            <p class="paragraph-light">Previously, anything that appeared in the DNA editor was able to be edited. With the latest software update, DNA labeled as a part was no longer editable. Engineers put together an interim solution — a yellow toast notification — to communicate the lack of editing capability.</p>
+
+            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bbf030cede1145f99354fe_Original%20Toast.gif"
+                 loading="lazy"
+                 alt="The Benchling DNA editor showing a yellow warning pop-up in the bottom left corner"
+                 class="case-img">
+
+            <p class="paragraph-light mt-16">However, the yellow toast was physically far away and not clearly associated with the parts designation. It was difficult to understand that the toast was appearing as a result of the user attempting to edit the part. Furthermore, the yellow toast raised unnecessary alarm — in other parts of the product, the toast is used to alert users when there is an actual error, such as an unsuccessful upload or inability to render a graph. Not being able to edit a part felt much lower on the error hierarchy.</p>
+            <p class="paragraph-light mt-12">Because the initial solution had been an error toast, I had initially thought about this project as improving error messaging. I realized after stepping through the intended communication and end goal, however, that we were <strong>not</strong> actually messaging about an error. <strong>Rather, we just needed to message about the status</strong> of a section of DNA — uneditable. With this new framework, I considered toast alternatives that would indicate status change.</p>
+
+            <div class="gif-grid">
+              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bc85c249d6c16e16cf6800_looping-no-type-cursor.gif"
+                   loading="lazy"
+                   alt="The Benchling DNA editor showing a no-entry sign appear with the cursor as it moves over a part">
+              <div class="gif-desc">
+                <h3 class="subsection-heading-full-width">"No entry" cursor</h3>
+                <p class="paragraph-light">One attempt used a "no entry" symbol associated with the type cursor to indicate no typing. However, this solution was too broad — other click actions, such as click-and-drag to highlight or right-click, are still available. It did not clearly indicate that only editing was unavailable.</p>
+              </div>
+
+              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bc94345cf5510eba01a166_wordle%20shake.gif"
+                   loading="lazy"
+                   alt="The Benchling DNA editor showing a part shaking to indicate it cannot be edited">
+              <div class="gif-desc">
+                <h3 class="subsection-heading-full-width">"Wordle shake"</h3>
+                <p class="paragraph-light">A different attempt used what I like to call the "Wordle shake" to indicate the area that would not allow the user to go forward. However, this was jarring, did not follow the movement patterns of the rest of the product, and required the user to guess what was wrong.</p>
+              </div>
+            </div>
+
+            <p class="paragraph-light">The solution I landed on was a tooltip that appears as the user tries to type. It <strong>provides explicit guidance for users to diagnose their situation</strong>, <strong>places the messaging physically close to the area of interest</strong>, and <strong>implicitly communicates the appropriate degree of urgency</strong> — low — to the user.</p>
+
+            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bc9a3d29da3c1ca3d95739_tooltip.gif"
+                 loading="lazy"
+                 alt="The Benchling DNA editor showing a tooltip appearing when the mouse moves over a part"
+                 class="case-img" style="margin-top: 20px;">
+          </div>
+
+          <!-- Exploration 2: Tooltip content -->
+          <div class="exploration-block">
+            <h2 class="subsection-heading-full-width">An aside: messaging content</h2>
+            <p class="paragraph-light">It was fun to explore what message should appear in the tooltip. As a big believer in <strong>user control</strong>, I felt strongly that the message should not just instruct the user <em>how</em> to edit a section of DNA if they wanted to, but also provide the action needed to actually do it.</p>
+
+            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be205621a63b141adf353a_tooltip%20messaging.png"
+                 loading="lazy"
+                 srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be205621a63b141adf353a_tooltip%20messaging-p-500.png 500w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be205621a63b141adf353a_tooltip%20messaging-p-800.png 800w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be205621a63b141adf353a_tooltip%20messaging-p-1080.png 1080w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be205621a63b141adf353a_tooltip%20messaging.png 1277w"
+                 sizes="(max-width: 767px) 93vw, (max-width: 991px) 728px, 940px"
+                 alt="Three tooltip variants labeled Not Good, Better, and Best — each with progressively more useful copy and actions"
+                 class="case-img zoomable">
+            <p class="caption">Three iterations of tooltip copy: the "Not Good" version explains the restriction but offers no next step; "Better" adds instructions to unlink; "Best" includes an inline "Unlink part" button.</p>
+
+            <p class="paragraph-light mt-16">The option with the inline button would provide the most efficient path to the user's end goal. However, adding an "Unlink part" button introduced a significant information architecture challenge: if two parts overlapped, which would be unlinked? Would both be unlinked? Because parts were not originally built with overlapping in mind, the existing infrastructure could not support such an action button. <strong>Given time and personnel constraints, we opted to use the "Better" option for now</strong>, with the "Best" option noted as a potential future project when DNA parts were next revisited.</p>
+          </div>
+
+          <!-- Exploration 3: Always-on visual indicator -->
+          <div class="exploration-block">
+            <h2 class="subsection-heading-full-width">Continuously indicating an uneditable status</h2>
+            <p class="paragraph-light">While the tooltip provided reactive messaging, I also wanted to create an "always on" visual indicator to continually remind users that parts were not editable. <strong>This would improve users' experience through continuous communication</strong>, and avoid the need to navigate through disruptive messaging. A common way of indicating a disabled state is by graying out an item to reduce contrast.</p>
+            <p class="paragraph-light mt-12"><strong>Graying out parts within the DNA sequence tested very well with users.</strong> It was an elegant solution — a clear visual cue that some functionality was disabled while keeping the sequence available for copying or other non-editing actions. <strong>However, the lowered contrast presented a clear accessibility challenge</strong> for users with low vision. This was doubly a problem wherever parts overlapped, as the contrast continued to lower.</p>
+
+            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd030a2b15acd057813697_accessibility.png"
+                 loading="lazy"
+                 srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd030a2b15acd057813697_accessibility-p-500.png 500w,
+                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd030a2b15acd057813697_accessibility.png 779w"
+                 sizes="(max-width: 767px) 93vw, 700px"
+                 alt="A graphic showing decreasing text contrast as parts are grayed out to indicate a disabled state, worsening with overlapping parts"
+                 class="case-img zoomable">
+            <p class="caption">The default Benchling text (dark gray on white) passes accessibility contrast checks. Adding a gray part background and then lightening the text to indicate "disabled" fails — and the problem compounds when parts overlap, making the text nearly unreadable.</p>
+
+            <p class="paragraph-light mt-16">Designing for inclusion is important because we want everyone to be able to use Benchling. Improving usability for users with low vision also increases general usability for all. With that in mind, I turned to a different "always on" visual cue.</p>
+
+            <div class="gif-grid" style="margin-top: 40px;">
+              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd0e8c1394390f13dd0136_no%20blnk%20cursor.gif"
+                   loading="lazy"
+                   alt="The Benchling DNA editor showing a blinking cursor, then a non-blinking cursor when clicked into a part">
+              <div class="gif-desc">
+                <h3 class="subsection-heading-full-width">Non-blinking cursor</h3>
+                <p class="paragraph-light">The blinking cursor changes to a non-blinking cursor when clicked into a part, <strong>providing a subtle reminder that there is a change of status and editability in these specially designated areas</strong>. For users familiar with this functionality, the cursor change alone may be enough — but if a user does attempt to type, the tooltip appears to provide more explicit messaging.</p>
+              </div>
+            </div>
+
+            <p class="paragraph-light" style="margin-top: 20px;">Altogether, the messaging that appears when a user attempts to edit a part looks like this:</p>
+
+            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd12aa0820274370d5dc8e_final.gif"
+                 loading="lazy"
+                 alt="The DNA sequence editor showing a blinking cursor, then a non-blinking cursor when clicked into a part, then a tooltip appearing after a pause when the user tries to type"
+                 class="case-img" style="margin-top: 16px;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ⑤ Reflections (gray) ──────────────────────────── -->
+  <div class="section-mod">
+    <div class="section-gray">
+      <div class="container-3">
+        <div class="label-content-grid">
+
+          <div>
+            <p class="work-section-title">Reflections</p>
+          </div>
+
+          <div>
+            <p class="paragraph-light">This started off sounding like a very straightforward project — the error message felt a little off, and I assumed tweaking the placement or copy would fix it. However, I discovered it wasn't even about error messaging! I really learned the value of going back to fundamentals and asking: "What are we hoping for as an outcome? What steps are necessary to achieve this?" I also didn't have much firsthand access to our target users for this project, so this was a great exercise in piecing together research from Benchling subject matter experts and pre-recorded notes from conversations with users.</p>
+            <p class="paragraph-light mt-12">As mentioned above, time constraints made adding an "Unlink Parts" action button to the tooltip not possible — for now. Given more time and resources, I would pursue this path. It would require a new set of hierarchies to govern overlapping parts (which one is "on top"? How can you tell?), but I believe it would allow parts to be used much more widely, empowering teams to use them more flexibly and improving data integrity across the product.</p>
+            <p class="paragraph-light mt-12">Lastly, it was very exciting to be working on parts because most scientists have never thought about DNA sections in this manner before. Introducing a "parts" framework could help scientists approach their experiments differently. However, a valuable learning for me was that with such open space, <strong>strong guardrails are necessary to lay the foundation, or you will be met with more confusion than discovery.</strong></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer-wrap">
+    <div class="footer-links">
+      <a href="/" class="footer-item">Back to Projects</a>
+      <a href="https://www.linkedin.com/in/irisfung/" target="_blank" class="footer-item">LinkedIn</a>
+      <a href="https://www.instagram.com/pewris/" target="_blank" class="footer-item">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="../../scripts.js" defer></script>
+</body>
+</html>
