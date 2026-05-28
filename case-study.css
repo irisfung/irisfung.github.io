@@ -150,13 +150,13 @@
 .numbered-list {
   color: #1a1b1f;
   margin: 12px 0 16px;
-  padding-left: 1.4em;
+  padding-left: 2.2em;
   font-weight: 400;
 }
 
 .list-3 li,
 .numbered-list li {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   line-height: 24px;
 }
 
