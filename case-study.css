@@ -270,33 +270,50 @@
   opacity: 0.5;
 }
 
+/* ─── Image drop shadow ─────────────────────────────────── */
+.img-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* ─── Image lightbox ────────────────────────────────────── */
 /* Applied to any image that should be click-to-expand      */
 .zoomable {
   cursor: zoom-in;
 }
 
+/* Always flex; toggled via opacity + pointer-events so     */
+/* CSS transitions work on both open and close.             */
 .lightbox-overlay {
-  display: none;
+  display: flex;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.88);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 999;
   cursor: zoom-out;
   align-items: center;
   justify-content: center;
   padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease;
 }
 
 .lightbox-overlay.open {
-  display: flex;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .lightbox-img {
   max-width: 100%;
   max-height: 90vh;
   object-fit: contain;
-  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.25);
+  transform: scale(0.88);
+  transition: transform 0.25s ease;
+}
+
+.lightbox-overlay.open .lightbox-img {
+  transform: scale(1);
 }
 
 /* ═══ Responsive ═══════════════════════════════════════════ */
