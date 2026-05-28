@@ -1,0 +1,222 @@
+/* ═══════════════════════════════════════════════════════════
+   art.css  —  Art / Illustrations page
+   Loaded alongside styles.css.
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── Page chrome ───────────────────────────────────────── */
+.art-page {
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+
+/* ─── Tab navigation ────────────────────────────────────── */
+.tab-nav {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 48px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 10px 28px 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333;
+  opacity: 0.45;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.tab-btn:hover  { opacity: 0.75; }
+.tab-btn.active {
+  opacity: 1;
+  border-bottom-color: #1a1b1f;
+}
+
+/* ─── Illustration column grids ─────────────────────────── */
+/* CSS columns let images flow naturally; adding a new
+   <figure> to the list is all that's needed.              */
+.art-columns {
+  columns: 2;
+  column-gap: 32px;
+}
+
+.art-figure {
+  break-inside: avoid;
+  margin: 0 0 32px;
+}
+
+.art-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.art-caption {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.65;
+  color: #555;
+  margin: 8px 0 0;
+}
+
+.art-caption a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(0,0,0,0.25);
+}
+
+.art-caption a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* ─── Projects & Installations layout ───────────────────── */
+.project-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 48px;
+  align-items: start;
+  margin-bottom: 64px;
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 16px 0 10px;
+  color: #1a1b1f;
+}
+
+.project-desc {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #555;
+  margin: 0;
+}
+
+/* ─── Carousel ──────────────────────────────────────────── */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Prev / next buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.88);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: opacity 0.2s, background 0.2s;
+  color: #333;
+  padding: 0;
+}
+
+.carousel-prev { left: 10px; }
+.carousel-next { right: 10px; }
+
+.carousel-btn:disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.carousel-btn:not(:disabled):hover {
+  background: #fff;
+}
+
+/* Dot indicators */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.carousel-dot.active {
+  background: #333;
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media screen and (max-width: 767px) {
+  .tab-btn {
+    padding-right: 20px;
+    font-size: 11px;
+  }
+
+  .art-columns {
+    columns: 1;
+  }
+
+  .project-row {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .tab-nav {
+    flex-wrap: wrap;
+    gap: 4px;
+    border-bottom: none;
+    margin-bottom: 32px;
+  }
+
+  .tab-btn {
+    border: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0;
+    padding: 8px 14px;
+    border-radius: 2px;
+  }
+
+  .tab-btn.active {
+    background: #1a1b1f;
+    color: #fff;
+    border-color: #1a1b1f;
+  }
+}
