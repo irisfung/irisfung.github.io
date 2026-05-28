@@ -6,14 +6,31 @@ document.addEventListener('DOMContentLoaded', function () {
   if (zoomables.length) {
     var overlay = document.createElement('div');
     overlay.className = 'lightbox-overlay';
-    overlay.innerHTML = '<img class="lightbox-img" alt="">';
+    overlay.innerHTML =
+      '<div class="lightbox-content">' +
+        '<img class="lightbox-img" alt="">' +
+        '<p class="lightbox-caption"></p>' +
+      '</div>';
     document.body.appendChild(overlay);
-    var lbImg = overlay.querySelector('.lightbox-img');
+    var lbImg     = overlay.querySelector('.lightbox-img');
+    var lbCaption = overlay.querySelector('.lightbox-caption');
 
     zoomables.forEach(function (img) {
       img.addEventListener('click', function () {
         lbImg.src = img.currentSrc || img.src;
         lbImg.alt = img.alt;
+
+        /* Find caption: check next sibling of the image, or of its
+           parent wrapper (e.g. inside .before-after-item).        */
+        var next = img.nextElementSibling;
+        if (!next || !next.classList.contains('caption')) {
+          var parentNext = img.parentElement && img.parentElement.nextElementSibling;
+          next = (parentNext && parentNext.classList.contains('caption')) ? parentNext : null;
+        }
+        var text = next ? next.textContent.trim() : '';
+        lbCaption.textContent = text;
+        lbCaption.hidden = !text;
+
         overlay.classList.add('open');
       });
     });
