@@ -122,14 +122,17 @@
           <!-- Exploration 1: Reframing the problem -->
           <div class="exploration-block">
             <h2 class="subsection-heading-full-width">Disentangling error messaging from status messaging</h2>
-            <p class="paragraph-light">Previously, anything that appeared in the DNA editor was able to be edited. With the latest software update, DNA labeled as a part was no longer editable. Engineers put together an interim solution — a yellow toast notification — to communicate the lack of editing capability.</p>
+            <p class="paragraph-light">Previously, anything that appeared in the DNA editor was able to be edited. With the latest software update, DNA labeled as a part was no longer editable.</p>
 
-            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bbf030cede1145f99354fe_Original%20Toast.gif"
-                 loading="lazy"
-                 alt="The Benchling DNA editor showing a yellow warning pop-up in the bottom left corner"
-                 class="case-img">
-
-            <p class="paragraph-light mt-16">However, the yellow toast was physically far away and not clearly associated with the parts designation. It was difficult to understand that the toast was appearing as a result of the user attempting to edit the part. Furthermore, the yellow toast raised unnecessary alarm — in other parts of the product, the toast is used to alert users when there is an actual error, such as an unsuccessful upload or inability to render a graph. Not being able to edit a part felt much lower on the error hierarchy.</p>
+            <div class="gif-grid">
+              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bbf030cede1145f99354fe_Original%20Toast.gif"
+                   loading="lazy"
+                   alt="The Benchling DNA editor showing a yellow warning pop-up in the bottom left corner">
+              <div class="gif-desc">
+                <p class="paragraph-light">Engineers put together an interim solution — a yellow toast notification — to communicate the lack of editing capability. However, the yellow toast was physically far away and not clearly associated with the parts designation. It was difficult to understand that the toast was appearing as a result of the user attempting to edit the part.</p>
+                <p class="paragraph-light mt-12">Furthermore, the yellow toast raised unnecessary alarm — in other parts of the product, the toast is used to alert users when there is an actual error, such as an unsuccessful upload or inability to render a graph. Not being able to edit a part felt much lower on the error hierarchy.</p>
+              </div>
+            </div>
             <p class="paragraph-light mt-12">Because the initial solution had been an error toast, I had initially thought about this project as improving error messaging. I realized after stepping through the intended communication and end goal, however, that we were <strong>not</strong> actually messaging about an error. <strong>Rather, we just needed to message about the status</strong> of a section of DNA — uneditable. With this new framework, I considered toast alternatives that would indicate status change.</p>
 
             <div class="gif-grid">
