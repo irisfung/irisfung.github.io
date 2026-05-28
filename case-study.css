@@ -216,6 +216,13 @@
   margin-bottom: 50px;
 }
 
+/* ─── Aside / callout block ─────────────────────────────── */
+.aside-block {
+  background: #f8f8f8;
+  padding: 40px 56px;
+  margin-bottom: 50px;
+}
+
 /* ─── GIF demo grid (gif | description, repeated) ──────── */
 .gif-grid {
   display: grid;
