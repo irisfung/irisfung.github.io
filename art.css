@@ -26,18 +26,28 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  letter-spacing: 0.5px;
   color: #333;
   opacity: 0.45;
   cursor: pointer;
   transition: opacity 0.2s;
 }
 
+/* The underline lives on the inner <span> so it's only as wide as the text */
+.tab-btn span {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -12px; /* pulls the span's border flush with the nav's border-bottom */
+}
+
 .tab-btn:hover  { opacity: 0.75; }
 .tab-btn.active {
   opacity: 1;
-  border-bottom-color: #1a1b1f;
+  color: #fe0005;
+}
+.tab-btn.active span {
+  border-bottom-color: #fe0005;
 }
 
 /* ─── Illustration column grids ─────────────────────────── */
@@ -214,9 +224,15 @@
     border-radius: 2px;
   }
 
+  .tab-btn span {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
   .tab-btn.active {
-    background: #1a1b1f;
+    background: #fe0005;
     color: #fff;
-    border-color: #1a1b1f;
+    border-color: #fe0005;
   }
 }
