@@ -1,0 +1,117 @@
+/* ═══════════════════════════════════════════════════════════
+   about.css  —  About Me page
+   Loaded alongside styles.css.
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── Page chrome ───────────────────────────────────────── */
+.about-page {
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+
+/* ─── Intro section: text left, photo right ─────────────── */
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+/* ─── Text column ────────────────────────────────────────── */
+.about-label {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 16px;
+}
+
+.about-heading {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 300;
+  line-height: 1.1;
+  color: #1a1b1f;
+  margin: 0 0 28px;
+}
+
+.about-bio {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.85;
+  color: #444;
+  margin: 0;
+}
+
+.about-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.25);
+  transition: text-decoration-color 0.15s;
+}
+
+.about-link:hover {
+  text-decoration-color: currentColor;
+}
+
+/* ─── Photo column ───────────────────────────────────────── */
+.about-photo-wrap {
+  /* slight offset downward so photo baseline aligns with bio bottom */
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ─── Connect section ────────────────────────────────────── */
+.about-connect {
+  max-width: 560px;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 48px;
+}
+
+.about-connect-heading {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1a1b1f;
+  margin: 0 0 16px;
+}
+
+.about-connect-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.85;
+  color: #444;
+  margin: 0;
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media screen and (max-width: 767px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    margin-bottom: 64px;
+  }
+
+  /* Photo goes below text on mobile */
+  .about-photo-wrap {
+    order: 1;
+  }
+
+  .about-text {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .about-page {
+    padding-top: 120px;
+  }
+
+  .about-intro {
+    margin-bottom: 48px;
+  }
+}
