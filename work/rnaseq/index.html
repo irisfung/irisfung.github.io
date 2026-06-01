@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RNA-Seq Analysis Tools | Iris Fung</title>
+  <meta name="description" content="Designing a browser-based RNA-Seq analysis suite that reduced time-to-insights from weeks to minutes and removed the need for a dedicated bioinformatician.">
+  <meta property="og:title" content="RNA-Seq Analysis Tools — Iris Fung">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62a3d27bf525567cd4f887b6_Flavicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/629bb634c8442b1de7d14830_Webclip.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../case-study.css">
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo-link" aria-label="home">
+        <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/628002057ec57943fa3e2681_irisfung%20avatar.jpg" width="45" alt="Iris Fung" class="logo-image">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/627ffb1a25b65e2dfaf79940_menu-icon.png" width="22" alt="">
+      </button>
+      <div class="nav-links">
+        <a href="/" class="nav-item current">design</a>
+        <a href="/work/art/" class="nav-item">Art</a>
+        <a href="/about/" class="nav-item">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── ① Project overview ─────────────────────────────── -->
+  <div class="section cs-overview-section">
+    <div class="container">
+      <div class="project-overview">
+
+        <!-- Title row (spans full width) -->
+        <div>
+          <h1 class="heading-jumbo">Sequencing Results: RNA-Seq Analysis Tools</h1>
+          <div class="client-bar">
+            <span>at <a href="https://plasmidsaurus.com/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(0,0,0,0.25);">Plasmidsaurus</a></span>
+          </div>
+        </div>
+
+        <!-- Problem + Solution (2fr) -->
+        <div>
+          <p class="position-name-text">PROBLEM</p>
+          <p class="paragraph-light">Build an interface for scientists to receive their RNA sequencing results.</p>
+          <p class="position-name-text">SOLUTION</p>
+          <p class="paragraph-light">Built an interactive and performant suite of browser-based analysis tools. Users reduced their time-to-insights from weeks to minutes and removed the need for a dedicated bioinformatician to find top gene hits, confirm knockouts, and compare gene expression across different experimental conditions.</p>
+        </div>
+
+        <!-- Role (1fr) -->
+        <div>
+          <p class="position-name-text">ROLE</p>
+          <p class="paragraph-light">Solo Designer &amp; Researcher</p>
+          <p class="role-description">Owned end-to-end design; partnered with PM and engineer as product team. Launched Oct 2025.</p>
+        </div>
+
+        <!-- Stats strip (spans full width) -->
+        <div class="stat-strip">
+          <div class="stat-item">
+            <span class="stat-number">6×</span>
+            <span class="stat-label">growth in monthly orders</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5×</span>
+            <span class="stat-label">growth in unique monthly customers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">76%</span>
+            <span class="stat-label">customer return rate</span>
+          </div>
+          <div class="stat-item stat-item--label">
+            <span class="stat-label">in 6 months</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ② Background (gray) ───────────────────────────────── -->
+  <div class="section-mod">
+    <div class="section-gray">
+      <div class="container-3">
+        <div class="label-content-grid">
+
+          <div>
+            <p class="work-section-title">Background</p>
+          </div>
+
+          <div>
+            <p class="paragraph-light">RNA sequencing has historically been inaccessible to smaller labs or researchers with less funding, simply because the time, expense, and expertise required for analysis is prohibitive. Plasmidsaurus was able to take a process that previously cost $300–500 per sample and required 2–4 weeks of sequencing, plus 1–2 weeks for a dedicated bioinformatician to process and analyze, and turn it into a $50, 3-days-to-insights experience.</p>
+
+            <p class="paragraph-light">A significant value add for customers — aside from the 1000% increase in speed and 85% decrease in cost — was removing the need for a bioinformatician in order to interpret sequencing data. For our RNA-Seq product, I designed an intuitive analysis interface that allowed users to understand and evaluate their RNA sequencing data, with <strong>80% of users able to completely rely on the Plasmidsaurus platform for analysis.</strong></p>
+
+            <p class="paragraph-light">The solution was designed to be both inviting to novices and powerful for experts. Our two main personas both wanted to use the interface but for different purposes: the novice wanted to complete their entire discovery analysis and walk away with a list of gene hits to follow up on. The expert was planning to move the data off the platform to do their own extended analysis, but found the analysis tools on the page invaluable for a quick overview without needing to write any lines of code.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ③ Design Exploration (white) ─────────────────────── -->
+  <div class="section">
+    <div class="container-4">
+      <div class="label-content-grid">
+
+        <div>
+          <p class="work-section-title">Design</p>
+        </div>
+
+        <div>
+
+          <!-- Block 1: Interactive data exploration -->
+          <div class="exploration-block">
+            <h2 class="subsection-heading-full-width">Interactive data exploration</h2>
+            <p class="paragraph-light">I used interactivity to reduce complexity and give users an intuitive way to explore their data. This is particularly helpful for novice users who have never done RNA-Seq analysis, and might not yet understand how different plots are related. Typical RNA-Seq results come back as a slide deck with some insights called out, but without the ability to explore the data on your own — and they cover the performance of up to 20,000 genes.</p>
+
+            <p class="paragraph-light">I focused on shortening the time to insight in many small ways:</p>
+
+            <ul class="list-3">
+              <li class="paragraph-light"><strong>Generated categories and comparisons as a foundation</strong> for interpreting data on the page, so users have a meaningful starting point the moment results load.</li>
+              <li class="paragraph-light"><strong>One-action paste for gene lists</strong> if you already have genes of interest, with saved gene lists that persist as you explore your data.</li>
+              <li class="paragraph-light"><strong>Integration with gene lookup</strong> so users can jump from a data point to background information without leaving the page.</li>
+              <li class="paragraph-light"><strong>Thumbnail previews of volcano plots</strong> in the comparisons list, giving users a visual scan before diving in.</li>
+            </ul>
+
+            <!-- Placeholder: generated categories + comparison GIF -->
+            <div class="img-placeholder">
+              <p>[GIF — Generated categories and comparison populated on page load]</p>
+            </div>
+            <p class="caption">[Caption]</p>
+
+            <!-- Placeholder: one-action paste / saved gene lists GIF -->
+            <div class="img-placeholder" style="margin-top: 24px;">
+              <p>[GIF — One-action gene list paste and saved gene lists]</p>
+            </div>
+            <p class="caption">[Caption]</p>
+
+            <p class="paragraph-light" style="margin-top: 32px;">A functional toolbar lets users tweak filters and parameters to explore different comparisons without losing context. Together, the volcano plot and fold-enrichment views allow users to select data points, surface relevant genes, and save gene sets directly from the table.</p>
+
+            <!-- Placeholder: volcano + fold enrichment GIF -->
+            <div class="img-placeholder" style="margin-top: 24px;">
+              <p>[GIF — Volcano plot and fold enrichment: selecting data points, saving a gene set from the table]</p>
+            </div>
+            <p class="caption">[Caption]</p>
+          </div>
+
+          <!-- Block 2: AI tools for scientists -->
+          <div class="exploration-block">
+            <h2 class="subsection-heading-full-width">AI tools for scientists</h2>
+            <p class="paragraph-light">I conducted a research sprint to understand how users were already using LLMs with their data, what built and lost trust, and what ways agentic interactions could provide the most value. What emerged was that our users:</p>
+
+            <ol class="numbered-list">
+              <li class="paragraph-light">Wanted to understand the transcriptional impact of their experimental variables as quickly as possible.</li>
+              <li class="paragraph-light">Relied on LLMs for methodology of higher-complexity analyses, but still wanted to independently run analysis for papers or meetings.</li>
+              <li class="paragraph-light">Needed to understand how data quality issues impacted results, and how to adjust analysis accordingly.</li>
+            </ol>
+
+            <p class="paragraph-light">Based on these findings, I focused on designing an agentic chat that was an <strong>analytical co-pilot rather than an interpreter.</strong> The agent is able to change the state of the analysis page — filters, groupings, plot generation — but does not tell scientists <em>what it means</em> or <em>what to do next.</em> The focus was quickly expanding the surface of analysis (removing the manual step of putting together individual comparisons and plots) without generating scientific conclusions for the scientist.</p>
+
+            <!-- Placeholder: agentic chat interface -->
+            <div class="img-placeholder" style="margin-top: 24px;">
+              <p>[Image/GIF — Agentic chat co-pilot updating analysis page state]</p>
+            </div>
+            <p class="caption">[Caption]</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ④ Reflections (gray) ──────────────────────────────── -->
+  <div class="section-mod">
+    <div class="section-gray">
+      <div class="container-3">
+        <div class="label-content-grid">
+
+          <div>
+            <p class="work-section-title">Reflections</p>
+          </div>
+
+          <div>
+            <p class="paragraph-light">Users have responded very positively to the results page, citing the intuitiveness of interactions and unmatched speed-to-insight. Strong immediate adoption is one of the clearest validation signals a product can receive — it's clear that cheap, fast, analysis-ready RNA-Seq was a genuine gap in the market.</p>
+
+            <p class="paragraph-light">I'm always thinking about what bringing products to the next level would be, and the two big areas I would like to expand on are:</p>
+
+            <ol class="numbered-list">
+              <li class="paragraph-light">Creating the concept of "Projects" to group together experimentally relevant RNA-Seq orders: this opens the door to larger time-course analyses, and allows users to build their narrative for writing a scientific paper or thesis directly through their sequencing orders.</li>
+              <li class="paragraph-light">Using experimental context provided in agentic chat to provide a more tailored experience for users: we can surface the most relevant plots, analyses, and QC considerations based on what questions we know the user is trying to answer.</li>
+            </ol>
+
+            <p class="paragraph-light">It's also been incredible designing in parallel with active research from our bioinformatics and lab R&amp;D team. I have not previously worked with this type of moving constraint before. This required staying close to what was technically possible at any given moment, and building enough flexibility into design decisions to accommodate capability shifts without starting over. The tradeoffs can be challenging, but the result is so rewarding: the interface gives our users access to truly cutting-edge analyses.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer-wrap">
+    <div class="footer-links">
+      <a href="/" class="footer-item">Back to Projects</a>
+      <a href="https://www.linkedin.com/in/irisfung/" target="_blank" rel="noopener" class="footer-item">LinkedIn</a>
+      <a href="https://www.instagram.com/pewris/" target="_blank" rel="noopener" class="footer-item">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox overlay (populated by scripts.js) -->
+  <script src="../../scripts.js"></script>
+</body>
+</html>
