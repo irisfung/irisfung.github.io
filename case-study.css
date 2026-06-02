@@ -250,6 +250,16 @@
   margin: 20px auto;
 }
 
+.case-img-half {
+  width: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .case-img-half {
+    width: 100%;
+  }
+}
+
 .case-img-centered {
   display: block;
   max-width: 100%;
