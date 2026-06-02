@@ -90,12 +90,8 @@
 
             <h2 class="subsection-heading-full-width">A common flow with parts</h2>
 
-            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be1b2e9afe0211032e6bcd_using%20autofill%20parts.png"
+            <img src="https://res.cloudinary.com/dlfdkyeum/image/upload/v1780374616/using_autofill_parts_jf4xb4.png"
                  loading="lazy"
-                 srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be1b2e9afe0211032e6bcd_using%20autofill%20parts-p-500.png 500w,
-                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be1b2e9afe0211032e6bcd_using%20autofill%20parts-p-800.png 800w,
-                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be1b2e9afe0211032e6bcd_using%20autofill%20parts.png 1274w"
-                 sizes="(max-width: 767px) 93vw, (max-width: 991px) 728px, 940px"
                  alt="Flow chart showing importing a new sequence, identifying a part from the parts registry, and the imported sequence newly labeled as a part"
                  class="case-img">
 
@@ -125,9 +121,10 @@
             <p class="paragraph-light">Previously, anything that appeared in the DNA editor was able to be edited. With the latest software update, DNA labeled as a part was no longer editable.</p>
 
             <div class="gif-grid">
-              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bbf030cede1145f99354fe_Original%20Toast.gif"
-                   loading="lazy"
-                   alt="The Benchling DNA editor showing a yellow warning pop-up in the bottom left corner">
+              <video autoplay loop muted playsinline
+                     aria-label="The Benchling DNA editor showing a yellow warning pop-up in the bottom left corner">
+                <source src="https://res.cloudinary.com/dlfdkyeum/video/upload/v1780374934/Original_Toast_btbcbe.mp4" type="video/mp4">
+              </video>
               <div class="gif-desc">
                 <p class="paragraph-light">Engineers put together an interim solution — a yellow toast notification — to communicate the lack of editing capability. However, the yellow toast was physically far away and not clearly associated with the parts designation. It was difficult to understand that the toast was appearing as a result of the user attempting to edit the part.</p>
                 <p class="paragraph-light mt-12">Furthermore, the yellow toast raised unnecessary alarm — in other parts of the product, the toast is used to alert users when there is an actual error, such as an unsuccessful upload or inability to render a graph. Not being able to edit a part felt much lower on the error hierarchy.</p>
@@ -136,17 +133,19 @@
             <p class="paragraph-light mt-12">Because the initial solution had been an error toast, I had initially thought about this project as improving error messaging. I realized after stepping through the intended communication and end goal, however, that we were <strong>not</strong> actually messaging about an error. <strong>Rather, we just needed to message about the status</strong> of a section of DNA — uneditable. With this new framework, I considered toast alternatives that would indicate status change.</p>
 
             <div class="gif-grid">
-              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bc85c249d6c16e16cf6800_looping-no-type-cursor.gif"
-                   loading="lazy"
-                   alt="The Benchling DNA editor showing a no-entry sign appear with the cursor as it moves over a part">
+              <video autoplay loop muted playsinline
+                     aria-label="The Benchling DNA editor showing a no-entry sign appear with the cursor as it moves over a part">
+                <source src="https://res.cloudinary.com/dlfdkyeum/video/upload/v1780374922/No_Entry_hover_kc8dxo.mp4" type="video/mp4">
+              </video>
               <div class="gif-desc">
                 <h3 class="subsection-heading-full-width">"No entry" cursor</h3>
                 <p class="paragraph-light">One attempt used a "no entry" symbol associated with the type cursor to indicate no typing. However, this solution was too broad — other click actions, such as click-and-drag to highlight or right-click, are still available. It did not clearly indicate that only editing was unavailable.</p>
               </div>
 
-              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bc94345cf5510eba01a166_wordle%20shake.gif"
-                   loading="lazy"
-                   alt="The Benchling DNA editor showing a part shaking to indicate it cannot be edited">
+              <video autoplay loop muted playsinline
+                     aria-label="The Benchling DNA editor showing a part shaking to indicate it cannot be edited">
+                <source src="https://res.cloudinary.com/dlfdkyeum/video/upload/v1780374921/Wordle_Shake_hya8rc.mp4" type="video/mp4">
+              </video>
               <div class="gif-desc">
                 <h3 class="subsection-heading-full-width">"Wordle shake"</h3>
                 <p class="paragraph-light">A different attempt used what I like to call the "Wordle shake" to indicate the area that would not allow the user to go forward. However, this was jarring, did not follow the movement patterns of the rest of the product, and required the user to guess what was wrong.</p>
@@ -155,10 +154,12 @@
 
             <p class="paragraph-light">The solution I landed on was a tooltip that appears as the user tries to type. It <strong>provides explicit guidance for users to diagnose their situation</strong>, <strong>places the messaging physically close to the area of interest</strong>, and <strong>implicitly communicates the appropriate degree of urgency</strong> — low — to the user.</p>
 
-            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bc9a3d29da3c1ca3d95739_tooltip.gif"
-                 loading="lazy"
-                 alt="The Benchling DNA editor showing a tooltip appearing when the mouse moves over a part"
-                 class="case-img-centered img-shadow" style="max-width: 610px; margin-top: 20px;">
+            <video autoplay loop muted playsinline
+                   class="case-img-centered img-shadow"
+                   style="max-width: 610px; margin-top: 20px;"
+                   aria-label="The Benchling DNA editor showing a tooltip appearing when the mouse moves over a part">
+              <source src="https://res.cloudinary.com/dlfdkyeum/video/upload/v1780374923/Tooltip_bhikdt.mp4" type="video/mp4">
+            </video>
           </div>
 
           <!-- Exploration 2: Tooltip content -->
@@ -166,13 +167,8 @@
             <h2 class="subsection-heading-full-width">An aside: messaging content</h2>
             <p class="paragraph-light">It was fun to explore what message should appear in the tooltip. As a big believer in <strong>user control</strong>, I felt strongly that the message should not just instruct the user <em>how</em> to edit a section of DNA if they wanted to, but also provide the action needed to actually do it.</p>
 
-            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be205621a63b141adf353a_tooltip%20messaging.png"
+            <img src="https://res.cloudinary.com/dlfdkyeum/image/upload/v1780374939/Messaging_ztvdzb.png"
                  loading="lazy"
-                 srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be205621a63b141adf353a_tooltip%20messaging-p-500.png 500w,
-                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be205621a63b141adf353a_tooltip%20messaging-p-800.png 800w,
-                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be205621a63b141adf353a_tooltip%20messaging-p-1080.png 1080w,
-                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62be205621a63b141adf353a_tooltip%20messaging.png 1277w"
-                 sizes="(max-width: 767px) 93vw, (max-width: 991px) 728px, 940px"
                  alt="Three tooltip variants labeled Not Good, Better, and Best — each with progressively more useful copy and actions"
                  class="case-img zoomable">
             <p class="caption">Three iterations of tooltip copy: the "Not Good" version explains the restriction but offers no next step; "Better" adds instructions to unlink; "Best" includes an inline "Unlink part" button.</p>
@@ -186,11 +182,8 @@
             <p class="paragraph-light">While the tooltip provided reactive messaging, I also wanted to create an "always on" visual indicator to continually remind users that parts were not editable. <strong>This would improve users' experience through continuous communication</strong>, and avoid the need to navigate through disruptive messaging. A common way of indicating a disabled state is by graying out an item to reduce contrast.</p>
             <p class="paragraph-light mt-12"><strong>Graying out parts within the DNA sequence tested very well with users.</strong> It was an elegant solution — a clear visual cue that some functionality was disabled while keeping the sequence available for copying or other non-editing actions. <strong>However, the lowered contrast presented a clear accessibility challenge</strong> for users with low vision. This was doubly a problem wherever parts overlapped, as the contrast continued to lower.</p>
 
-            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd030a2b15acd057813697_accessibility.png"
+            <img src="https://res.cloudinary.com/dlfdkyeum/image/upload/v1780375020/accessibility_huvxv5.png"
                  loading="lazy"
-                 srcset="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd030a2b15acd057813697_accessibility-p-500.png 500w,
-                         https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd030a2b15acd057813697_accessibility.png 779w"
-                 sizes="(max-width: 767px) 93vw, 700px"
                  alt="A graphic showing decreasing text contrast as parts are grayed out to indicate a disabled state, worsening with overlapping parts"
                  class="case-img zoomable">
             <p class="caption">The default Benchling text (dark gray on white) passes accessibility contrast checks. Adding a gray part background and then lightening the text to indicate "disabled" fails — and the problem compounds when parts overlap, making the text nearly unreadable.</p>
@@ -198,9 +191,10 @@
             <p class="paragraph-light mt-16">Designing for inclusion is important because we want everyone to be able to use Benchling. Improving usability for users with low vision also increases general usability for all. With that in mind, I turned to a different "always on" visual cue.</p>
 
             <div class="gif-grid" style="margin-top: 40px;">
-              <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd0e8c1394390f13dd0136_no%20blnk%20cursor.gif"
-                   loading="lazy"
-                   alt="The Benchling DNA editor showing a blinking cursor, then a non-blinking cursor when clicked into a part">
+              <video autoplay loop muted playsinline
+                     aria-label="The Benchling DNA editor showing a blinking cursor, then a non-blinking cursor when clicked into a part">
+                <source src="https://res.cloudinary.com/dlfdkyeum/video/upload/v1780374936/No_blink_cursor_d96szc.mp4" type="video/mp4">
+              </video>
               <div class="gif-desc">
                 <h3 class="subsection-heading-full-width">Non-blinking cursor</h3>
                 <p class="paragraph-light">The blinking cursor changes to a non-blinking cursor when clicked into a part, <strong>providing a subtle reminder that there is a change of status and editability in these specially designated areas</strong>. For users familiar with this functionality, the cursor change alone may be enough — but if a user does attempt to type, the tooltip appears to provide more explicit messaging.</p>
@@ -209,10 +203,12 @@
 
             <p class="paragraph-light" style="margin-top: 20px;">Altogether, the messaging that appears when a user attempts to edit a part looks like this:</p>
 
-            <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/62bd12aa0820274370d5dc8e_final.gif"
-                 loading="lazy"
-                 alt="The DNA sequence editor showing a blinking cursor, then a non-blinking cursor when clicked into a part, then a tooltip appearing after a pause when the user tries to type"
-                 class="case-img-centered img-shadow" style="max-width: 610px; margin-top: 48px; margin-bottom: 4px;">
+            <video autoplay loop muted playsinline
+                   class="case-img-centered img-shadow"
+                   style="max-width: 610px; margin-top: 48px; margin-bottom: 4px;"
+                   aria-label="The DNA sequence editor showing a blinking cursor, then a non-blinking cursor when clicked into a part, then a tooltip appearing after a pause when the user tries to type">
+              <source src="https://res.cloudinary.com/dlfdkyeum/video/upload/v1780374935/Final_cgkxj8.mp4" type="video/mp4">
+            </video>
           </div>
 
         </div>

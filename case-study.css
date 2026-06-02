@@ -288,7 +288,8 @@
   margin-bottom: 60px;
 }
 
-.gif-grid img {
+.gif-grid img,
+.gif-grid video {
   display: block;
   max-height: 40rem;
   width: auto;
