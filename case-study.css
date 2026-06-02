@@ -44,6 +44,8 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 15px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 /* Matches Webflow's .container-4 (white band inner) */
@@ -54,6 +56,8 @@
   margin-right: auto;
   margin-top: 10px;
   padding-bottom: 60px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 /* ─── Alternating section bands ─────────────────────────── */
@@ -294,7 +298,7 @@
   column-gap: 40px;
   row-gap: 71px;
   align-items: start;
-  margin-top: 60px;
+  margin-top: 24px;
   margin-bottom: 60px;
 }
 
@@ -411,6 +415,12 @@
 
 /* Tablet (≤991px) */
 @media screen and (max-width: 991px) {
+  .container-3,
+  .container-4 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .project-overview {
     grid-template-columns: 1fr;
     width: 70%;
@@ -433,6 +443,12 @@
 
 /* Mobile (≤767px) */
 @media screen and (max-width: 767px) {
+  .container-3,
+  .container-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .section-hero,
   .section-mod {
     margin-left: 15px;
