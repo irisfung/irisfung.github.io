@@ -188,11 +188,23 @@
 .stat-strip {
   grid-column: 1 / -1;
   display: flex;
-  gap: 48px;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 16px;
   padding-top: 40px;
   border-top: 1px solid #e8e8e8;
+}
+
+.stat-strip-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.stat-strip-items {
+  display: flex;
+  gap: 48px;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .stat-item {
@@ -214,11 +226,6 @@
   color: #777;
   line-height: 1.4;
   max-width: 140px;
-}
-
-.stat-item--label .stat-label {
-  font-style: italic;
-  max-width: none;
 }
 
 /* ─── Image / GIF placeholder ───────────────────────────── */
