@@ -129,35 +129,29 @@
   </div>
 
   <!-- Design (white) -->
-  <div class="section">
-    <div class="container-3">
-      <div class="label-content-grid">
+  <div class="container-4">
 
-        <div>
-          <p class="work-section-title">Design</p>
-        </div>
-
-        <div style="grid-column: 2;">
-          <p class="paragraph-light">There's many ways scientists can analyze their RNAseq data, which meant I needed to strike a balance between giving smart defaults and giving flexibility. I&nbsp;focused on an opinionated set of tools that would meet the analytical needs for 85% of our users, while introducing tweakable parameters and views to each of these tools. Our three main analysis tools allowed users to:<br></p>
-
-          <ul class="list-3">
-            <li class="paragraph-light">Pick genes they want to see gene expression of in real time.</li>
-            <li class="paragraph-light">Generate volcano plots from pairwise comparisons to identify lists of "top hit" genes. </li>
-            <li class="paragraph-light">Contextualize gene hits with functional pathway grouping to show if entire functions were being affected by a treatment condition</li>
-          </ul>
-
-          <h2 class="subsection-heading-full-width">Interactive data exploration</h2>
-          <p class="paragraph-light">RNAseq analysis is fundamentally a non-linear investigation. A researcher doesn't ask one question and move on. They ask a question, get a partial answer, and immediately need to interrogate that answer from a different angle. Unfortunately, RNAseq analysis results have historically been shared on static slides, which puts a huge obstacle to following up any additional investigative threads. I&nbsp;took advantage of our browser-based implementation and <strong>heavily used interactivity to connect the dots between our analysis tools</strong>. Users could follow up on threads of investigation in a single gesture.<br></p>
-        </div>
-
-      </div>
+    <div class="content-block">
+      <p class="work-section-title">Design</p>
     </div>
+
+    <p class="paragraph-light">There's many ways scientists can analyze their RNAseq data, which meant I needed to strike a balance between giving smart defaults and giving flexibility. I&nbsp;focused on an opinionated set of tools that would meet the analytical needs for 85% of our users, while introducing tweakable parameters and views to each of these tools. Our three main analysis tools allowed users to:<br></p>
+
+    <ul class="list-3">
+      <li class="paragraph-light">Pick genes they want to see gene expression of in real time.</li>
+      <li class="paragraph-light">Generate volcano plots from pairwise comparisons to identify lists of "top hit" genes. </li>
+      <li class="paragraph-light">Contextualize gene hits with functional pathway grouping to show if entire functions were being affected by a treatment condition</li>
+    </ul>
+
+    <h2 class="subsection-heading-full-width">Interactive data exploration</h2>
+    <p class="paragraph-light">RNAseq analysis is fundamentally a non-linear investigation. A researcher doesn't ask one question and move on. They ask a question, get a partial answer, and immediately need to interrogate that answer from a different angle. Unfortunately, RNAseq analysis results have historically been shared on static slides, which puts a huge obstacle to following up any additional investigative threads. I&nbsp;took advantage of our browser-based implementation and <strong>heavily used interactivity to connect the dots between our analysis tools</strong>. Users could follow up on threads of investigation in a single gesture.<br></p>
+
   </div>
 
   <!-- GIF Grid -->
   <div class="section">
     <div class="container-3">
-      <div class="gif-grid">
+      <div class="gif-grid" style="grid-template-columns: 2fr 1fr;">
 
         <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6a20cb517af654e43b3547c5_Screen%20Cast%202026-06-03%20at%205.47.34%20PM.gif"
              loading="lazy"
@@ -182,30 +176,25 @@
   </div>
 
   <!-- AI Tools section -->
-  <div class="section">
-    <div class="container-3">
-      <div class="label-content-grid">
-        <div></div>
-        <div>
-          <h2 class="subsection-heading-full-width">AI&nbsp;Tools for Scientists</h2>
-          <p class="paragraph-light">I conducted a research sprint to understand how users were already using LLMs with their data, what built and lost trust, and what ways agentic interactions could provide the most value. What emerged was that our users:<br></p>
+  <div class="container-4">
 
-          <ul class="list-3">
-            <li class="paragraph-light">Wanted to understand the transcriptional impact of their experimental variables as quickly as possible.</li>
-            <li class="paragraph-light">Relied on LLMs for methodology of higher-complexity analyses, but still wanted to independently run analysis for papers or meetings.</li>
-            <li class="paragraph-light">Needed to understand how data quality issues impacted results, and how to adjust analysis accordingly.</li>
-          </ul>
+    <h2 class="subsection-heading-full-width">AI&nbsp;Tools for Scientists</h2>
+    <p class="paragraph-light">I conducted a research sprint to understand how users were already using LLMs with their data, what built and lost trust, and what ways agentic interactions could provide the most value. What emerged was that our users:<br></p>
 
-          <p class="paragraph-light">Based on these findings, I focused on designing an agentic chat that was an <strong>analytical co-pilot rather than an interpreter.</strong> The agent is able to compare with literature, explain analyses, even change the state of the page — filters, groupings, plot generation — but does not tell scientists what it means or what the next experimental step is<em>.</em> The focus was quickly expanding the surface of analysis (removing the manual step of putting together individual comparisons and plots) without generating scientific conclusions for the scientist.<br></p>
-        </div>
-      </div>
-    </div>
+    <ul class="list-3">
+      <li class="paragraph-light">Wanted to understand the transcriptional impact of their experimental variables as quickly as possible.</li>
+      <li class="paragraph-light">Relied on LLMs for methodology of higher-complexity analyses, but still wanted to independently run analysis for papers or meetings.</li>
+      <li class="paragraph-light">Needed to understand how data quality issues impacted results, and how to adjust analysis accordingly.</li>
+    </ul>
+
+    <p class="paragraph-light">Based on these findings, I focused on designing an agentic chat that was an <strong>analytical co-pilot rather than an interpreter.</strong> The agent is able to compare with literature, explain analyses, even change the state of the page — filters, groupings, plot generation — but does not tell scientists what it means or what the next experimental step is<em>.</em> The focus was quickly expanding the surface of analysis (removing the manual step of putting together individual comparisons and plots) without generating scientific conclusions for the scientist.<br></p>
+
   </div>
 
   <!-- AI GIF Grid -->
   <div class="section">
     <div class="container-3">
-      <div class="gif-grid">
+      <div class="gif-grid" style="grid-template-columns: 2fr 1fr;">
 
         <img src="https://cdn.prod.website-files.com/627ffb1a25b65e31d1f7992f/6a21287d4bdb2ee0766a03c8_Demo%20AI%20chat_trimmed.gif"
              loading="lazy"
